@@ -1,5 +1,5 @@
 {% set name = "codem" %}
-{% set version = "0.24.0" %}
+{% set version = "0.25.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/codem-{{ version }}.tar.gz
-  sha256: cb49313e821fca2390dd2f22f3bba826167bd2fb35a2eff4b4254842fbd8e7dd
+  sha256: 4e123aad90122afa9c46f130380fc07eb1608809362e09c9ce841dcfe5e40a27
 
 build:
   noarch: python
@@ -26,7 +26,8 @@ requirements:
     - python >=3.7
     - typing-extensions
     - numpy
-    - {{ pin_compatible('python-pdal', max_pin='x.x.x') }}
+    - python-pdal
+    - {{ pin_compatible('pdal', max_pin='x.x') }}
     - opencv
     - rasterio
     - trimesh
