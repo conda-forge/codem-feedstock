@@ -1,5 +1,5 @@
 {% set name = "codem" %}
-{% set version = "0.25.0" %}
+{% set version = "0.25.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/codem-{{ version }}.tar.gz
-  sha256: 4e123aad90122afa9c46f130380fc07eb1608809362e09c9ce841dcfe5e40a27
+  sha256: 6a33ada813f6893213acda2b5a4ea9159c6b6b5ad8e5907966daf0f89a7e3516
 
 build:
   noarch: python
