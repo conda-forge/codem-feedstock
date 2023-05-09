@@ -19,15 +19,14 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.9
     - pip
     - setuptools >=64.0
   run:
-    - python >=3.7
+    - python >=3.9
     - typing-extensions
     - numpy
-    - python-pdal
-    - {{ pin_compatible('pdal', max_pin='x.x') }}
+    - {{ pin_compatible('python-pdal', max_pin='x.x.x') }}
     - opencv
     - rasterio
     - trimesh
