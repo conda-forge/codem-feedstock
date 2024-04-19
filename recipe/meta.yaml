@@ -38,6 +38,7 @@ requirements:
     - pandas
     - scipy
     - pyyaml
+    - mesalib
 
 test:
   imports:
