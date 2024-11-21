@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/codem-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/codem-{{ version }}.tar.gz
   sha256: f89da0436fcd032d5ebc88118cfa33c9e391fae14403f9783704f2fd4fd8783a
 
 build:
@@ -19,7 +19,7 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python 3.9
     - pip
     - setuptools >=64.0
   run:
