@@ -1,5 +1,5 @@
 {% set name = "codem" %}
-{% set version = "0.25.6" %}
+{% set version = "0.26.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/codem-{{ version }}.tar.gz
-  sha256: f89da0436fcd032d5ebc88118cfa33c9e391fae14403f9783704f2fd4fd8783a
+  sha256: bef6238dca68c0829b85c025420b048086a1830672e51d8a13647687cef9f273
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
   entry_points:
     - codem = codem.main:main
     - vcd = vcd.main:main
